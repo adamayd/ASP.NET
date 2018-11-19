@@ -1,0 +1,28 @@
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.deps.json
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.runtimeconfig.json
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.runtimeconfig.dev.json
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.dll
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.pdb
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.csprojAssemblyReference.cache
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.csproj.CoreCompileInputs.cache
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorAssemblyInfo.cache
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorAssemblyInfo.cs
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.AssemblyInfoInputs.cache
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.AssemblyInfo.cs
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorTargetAssemblyInfo.cache
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.dll
+C:\Users\adama\source\repos\ASP.NET\ExploreCalifornia\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.pdb
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.deps.json
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.runtimeconfig.json
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.runtimeconfig.dev.json
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.dll
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.pdb
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.csprojAssemblyReference.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.csproj.CoreCompileInputs.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorAssemblyInfo.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorAssemblyInfo.cs
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.AssemblyInfoInputs.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.AssemblyInfo.cs
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorTargetAssemblyInfo.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.dll
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.pdb
