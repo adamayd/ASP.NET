@@ -26,3 +26,12 @@ C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\
 C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorTargetAssemblyInfo.cache
 C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.dll
 C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.pdb
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.Views.dll
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\bin\Debug\netcoreapp2.1\ExploreCalifornia.Views.pdb
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.TagHelpers.input.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.TagHelpers.output.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorCoreGenerate.cache
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\Razor\Views\Home\index.g.cshtml.cs
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.RazorTargetAssemblyInfo.cs
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.Views.pdb
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\ExploreCalifornia.csproj.CopyComplete
