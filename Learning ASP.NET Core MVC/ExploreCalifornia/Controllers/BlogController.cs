@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ExploreCalifornia.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExploreCalifornia.Controllers
@@ -11,16 +12,21 @@ namespace ExploreCalifornia.Controllers
     {
         public IActionResult Index()
         {
-            return new ContentResult { Content = "Blog Posts" };
+            return View();
         }
 
         [Route("{year:min(2000)}/{month:range(1,12)}/{key}")]
         public IActionResult Post(int year, int month, string key)
         {
-            return new ContentResult
+            var post = new Post
             {
-                Content = string.Format($"Year: {year}; Month: {month}; Key: {key}")
+                Title = "My Blog Post",
+                Posted = DateTime.Now,
+                Author = "Adam Ayd",
+                Body = "This is a great blog post, don't you think?"
             };
+
+            return View(post);
         }
     }
 }
