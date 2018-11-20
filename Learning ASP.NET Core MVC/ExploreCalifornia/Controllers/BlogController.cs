@@ -12,7 +12,25 @@ namespace ExploreCalifornia.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var posts = new[]
+            {
+                new Post
+                {
+                    Title = "My Blog Post",
+                    Posted = DateTime.Now,
+                    Author = "Adam Ayd",
+                    Body = "This is a great blog post, don't you think?"
+                },
+                new Post
+                {
+                    Title = "My Blog Post",
+                    Posted = DateTime.Now,
+                    Author = "Adam Ayd",
+                    Body = "This is a ANOTHER great blog post, don't you think?"
+                }
+            };
+
+            return View(posts);
         }
 
         [Route("{year:min(2000)}/{month:range(1,12)}/{key}")]
