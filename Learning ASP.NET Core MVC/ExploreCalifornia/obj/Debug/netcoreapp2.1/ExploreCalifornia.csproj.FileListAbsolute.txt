@@ -41,3 +41,4 @@ C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\
 C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Post.g.cshtml.cs
 C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\MonthlySpecials\Default.g.cshtml.cs
 C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_SimpleLayout.g.cshtml.cs
+C:\Users\adama\source\repos\ASP.NET\Learning ASP.NET Core MVC\ExploreCalifornia\obj\Debug\netcoreapp2.1\Razor\Views\Blog\Create.g.cshtml.cs
