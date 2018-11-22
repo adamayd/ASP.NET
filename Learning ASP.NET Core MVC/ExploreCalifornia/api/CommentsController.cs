@@ -2,20 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ExploreCalifornia.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExploreCalifornia.api
 {
-    [Route("api/[controller]")]
+    [Route("api/posts/{postKey}/comments")]
     [ApiController]
     public class CommentsController : ControllerBase
     {
+        private readonly BlogDataContext _db;
+
+        public CommentsController(BlogDataContext db)
+        {
+            _db = db;
+        }
+
         // GET: api/Comments
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IQueryable<Comment> Get(string postKey)
         {
-            return new string[] { "value1", "value2" };
+            return _db.Comments.Where(x => x.Post.Key == postKey);
         }
 
         // GET: api/Comments/5
@@ -27,8 +35,21 @@ namespace ExploreCalifornia.api
 
         // POST: api/Comments
         [HttpPost]
-        public void Post([FromBody] string value)
+        public Comment Post(string postKey, [FromBody]Comment comment)
         {
+            var post = _db.Posts.FirstOrDefault(x => x.Key == postKey);
+
+            if (post == null)
+                return null;
+
+            comment.Post = post;
+            comment.Posted = DateTime.Now;
+            comment.Author = User.Identity.Name;
+
+            _db.Comments.Add(comment);
+            _db.SaveChanges();
+
+            return comment;
         }
 
         // PUT: api/Comments/5
