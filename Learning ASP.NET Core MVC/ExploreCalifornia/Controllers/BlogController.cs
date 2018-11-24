@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ExploreCalifornia.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExploreCalifornia.Controllers
@@ -51,12 +52,14 @@ namespace ExploreCalifornia.Controllers
             return View(post);
         }
 
+        [Authorize]
         [HttpGet, Route("create")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost, Route("create")]
         public IActionResult Create(Post post)
         {
