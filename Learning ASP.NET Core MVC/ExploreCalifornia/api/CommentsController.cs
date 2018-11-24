@@ -28,9 +28,10 @@ namespace ExploreCalifornia.api
 
         // GET: api/Comments/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public Comment Get(long id)
         {
-            return "value";
+            var comment = _db.Comments.FirstOrDefault(x => x.Id == id);
+            return comment;
         }
 
         // POST: api/Comments
@@ -54,14 +55,32 @@ namespace ExploreCalifornia.api
 
         // PUT: api/Comments/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult Put(long id, [FromBody] Comment updated)
         {
+            var comment = _db.Comments.FirstOrDefault(x => x.Id == id);
+
+            if (comment == null)
+                return NotFound();
+
+            comment.Body = updated.Body;
+
+            //_db.Comments.Update(comment);
+            _db.SaveChanges();
+
+            return Ok();
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(long id)
         {
+            var comment = _db.Comments.FirstOrDefault(x => x.Id == id);
+
+            if (comment != null)
+            {
+                _db.Comments.Remove(comment);
+                _db.SaveChanges();
+            }
         }
     }
 }
