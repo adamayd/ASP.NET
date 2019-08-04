@@ -24,11 +24,48 @@ namespace CoreCodeCamp.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<CampModel[]>> GetCamps()
+        public async Task<ActionResult<CampModel[]>> GetCamps(bool includeTalks = false)
         {
             try
             {
-                var results = await _repository.GetAllCampsAsync();
+                var results = await _repository.GetAllCampsAsync(includeTalks);
+
+                return _mapper.Map<CampModel[]>(results);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+            }
+        }
+
+        [HttpGet("{moniker}")]
+        public async Task<ActionResult<CampModel>> GetSingleCamp(string moniker)
+        {
+            try
+            {
+                var results = await _repository.GetCampAsync(moniker);
+
+                if (results == null)
+                {
+                    return NotFound();
+                }
+
+                return _mapper.Map<CampModel>(results);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Database Failure");
+            }
+        }
+
+        [HttpGet("search")]
+        public async Task<ActionResult<CampModel[]>> SearchByDate(DateTime theDate, bool includeTalks = false)
+        {
+            try
+            {
+                var results = await _repository.GetAllCampsByEventDate(theDate, includeTalks);
+
+                if (!results.Any()) return NotFound();
 
                 return _mapper.Map<CampModel[]>(results);
             }
