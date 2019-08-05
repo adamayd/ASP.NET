@@ -12,30 +12,50 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.AspNetCore.Mvc.Versioning.Conventions;
+using CoreCodeCamp.Controllers;
 
 namespace CoreCodeCamp
 {
-  public class Startup
-  {
-    public void ConfigureServices(IServiceCollection services)
+    public class Startup
     {
-      services.AddDbContext<CampContext>();
-      services.AddScoped<ICampRepository, CampRepository>();
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext<CampContext>();
+            services.AddScoped<ICampRepository, CampRepository>();
 
-      services.AddAutoMapper();
-            
-      services.AddMvc()
-        .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-    }
+            services.AddAutoMapper();
 
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-    {
-      if (env.IsDevelopment())
-      {
-        app.UseDeveloperExceptionPage();
-      }
-      
-      app.UseMvc();
+            services.AddApiVersioning(opt =>
+            {
+                opt.AssumeDefaultVersionWhenUnspecified = true;
+                opt.DefaultApiVersion = new ApiVersion(1, 1);
+                opt.ReportApiVersions = true;
+                opt.ApiVersionReader = new UrlSegmentApiVersionReader();
+                //opt.ApiVersionReader = ApiVersionReader.Combine(
+                //    new HeaderApiVersionReader("X-Version"),
+                //    new QueryStringApiVersionReader("ver", "version"));
+
+                opt.Conventions.Controller<TalksController>()
+                    .HasApiVersion(new ApiVersion(1, 0))
+                    .HasApiVersion(new ApiVersion(1, 1))
+                        .Action(c => c.DeleteTalk(default(string), default(int)))
+                            .MapToApiVersion(1, 1);
+            });
+
+            services.AddMvc()
+              .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+        }
+
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseMvc();
+        }
     }
-  }
 }
