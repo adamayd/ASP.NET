@@ -13,14 +13,22 @@ namespace CoreCodeCamp.Data
         public CampProfile()
         {
             CreateMap<Camp, CampModel>()
-                .ForMember(c => c.Venue, o => o.MapFrom(m => m.Location.VenueName))
-                .ForMember(c => c.Address1, o => o.MapFrom(m => m.Location.Address1))
-                .ForMember(c => c.Address2, o => o.MapFrom(m => m.Location.Address2))
-                .ForMember(c => c.Address3, o => o.MapFrom(m => m.Location.Address3))
-                .ForMember(c => c.CityTown, o => o.MapFrom(m => m.Location.CityTown))
-                .ForMember(c => c.StateProvince, o => o.MapFrom(m => m.Location.StateProvince))
-                .ForMember(c => c.PostalCode, o => o.MapFrom(m => m.Location.PostalCode))
-                .ForMember(c => c.Country, o => o.MapFrom(m => m.Location.Country))
+                .ForMember(dest => dest.Venue, opt => opt.MapFrom(src => src.Location.VenueName))
+                .ForMember(dest => dest.Address1, opt => opt.MapFrom(src => src.Location.Address1))
+                .ForMember(dest => dest.Address2, opt => opt.MapFrom(src => src.Location.Address2))
+                .ForMember(dest => dest.Address3, opt => opt.MapFrom(src => src.Location.Address3))
+                .ForMember(dest => dest.CityTown, opt => opt.MapFrom(src => src.Location.CityTown))
+                .ForMember(dest => dest.StateProvince, opt => opt.MapFrom(src => src.Location.StateProvince))
+                .ForMember(dest => dest.PostalCode, opt => opt.MapFrom(src => src.Location.PostalCode))
+                .ForMember(dest => dest.Country, opt => opt.MapFrom(src => src.Location.Country))
+                .ReverseMap();
+
+            CreateMap<Talk, TalkModel>()
+                .ReverseMap()
+                .ForMember(src => src.Camp, opt => opt.Ignore())
+                .ForMember(src => src.Speaker, opt => opt.Ignore());
+
+            CreateMap<Speaker, SpeakerModel>()
                 .ReverseMap();
         }
         
